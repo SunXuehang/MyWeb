@@ -82,6 +82,7 @@ section h2 {
   text-align: left;
   max-width: 800px;
   margin: 0 auto;
+  position: relative; /* 为了定位时间 */
 }
 
 .project-media {
@@ -89,6 +90,14 @@ section h2 {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+}
+
+.project-time {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 0.8rem; /* 小字格式 */
+  color: #666666; /* 灰色字体 */
 }
 
 ul {
@@ -105,4 +114,12 @@ footer {
   color: #000000; /* 黑色字体 */
   padding: 1rem 0;
   margin-top: 2rem;
+}
+
+/* 奖项时间样式 */
+.award-time {
+  font-size: inherit; /* 继承父元素的字体大小 */
+  font-family: inherit; /* 继承父元素的字体 */
+  color: inherit; /* 继承父元素的颜色 */
+  margin-right: 10px; /* 与奖项内容保持间距 */
 }

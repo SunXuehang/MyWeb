@@ -9,6 +9,7 @@ The project has the following structure:
 ```
 personal-website
 ├── docs
+│   ├── index.html      # html file
 │   ├── styles.css      # CSS styles for the website
 │   ├── script.js       # JavaScript for interactive features  
 │   └── assets          # Information about assets used in the project  

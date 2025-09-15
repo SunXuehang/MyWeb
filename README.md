@@ -8,17 +8,11 @@ The project has the following structure:
 
 ```
 personal-website
-├── public
-│   └── index.html          # Main HTML document for the personal website
-├── src
-│   ├── css
-│   │   └── styles.css      # CSS styles for the website
-│   ├── js
-│   │   └── script.js       # JavaScript for interactive features
-│   └── assets
-│       └── README.md       # Information about assets used in the project
-├── package.json             # Configuration file for npm
-└── README.md                # Documentation for the project
+├── docs
+│   ├── styles.css      # CSS styles for the website
+│   ├── script.js       # JavaScript for interactive features  
+│   └── assets          # Information about assets used in the project  
+└── README.md           # Documentation for the project
 ```
 
 ## Instructions to Use

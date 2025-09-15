@@ -1,0 +1,20 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "A personal website to introduce myself, showcasing my experience, projects, and achievements.",
+  "main": "src/js/script.js",
+  "scripts": {
+    "start": "live-server public"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "portfolio"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

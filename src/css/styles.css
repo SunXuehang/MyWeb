@@ -1,0 +1,108 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #000000; /* 黑色字体 */
+  background-color: #F9FCFF; /* 最浅蓝色背景 */
+  text-align: center;
+}
+
+header {
+  background: #081F5C; /* 深蓝色色条 */
+  height: 20px; /* 设置色条高度 */
+  width: 100%; /* 色条宽度占满页面 */
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #334EAC; /* 中蓝色标题 */
+  margin-bottom: 1rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.profile-photo {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #7096D1; /* 边框为浅蓝色 */
+}
+
+.about-container p {
+  max-width: 600px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.contact-list li {
+  margin: 0.5rem 0;
+}
+
+.contact-list a {
+  color: #081F5C; /* 深蓝色链接 */
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-media {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+footer {
+  background: #D0E3FF; /* 浅蓝色背景 */
+  color: #000000; /* 黑色字体 */
+  padding: 1rem 0;
+  margin-top: 2rem;
+}

@@ -37,8 +37,8 @@ section h2 {
 }
 
 .profile-photo {
-  width: 150px;
-  height: auto;
+  width: 180px; /* 增加宽度 */
+  height: auto; /* 保持宽高比 */
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -57,11 +57,13 @@ section h2 {
 
 .contact-list li {
   margin: 0.5rem 0;
+  font-size: 0.6rem; /* 调整字体大小 */
 }
 
 .contact-list a {
   color: #081F5C; /* 深蓝色链接 */
   text-decoration: none;
+  font-size: 0.6rem; /* 调整超链接字体大小 */
 }
 
 .contact-list a:hover {
@@ -86,7 +88,7 @@ section h2 {
 }
 
 .project-media {
-  width: 200px;
+  width: 180px; /* 增加宽度 */
   height: auto;
   border-radius: 8px;
   object-fit: cover;
@@ -122,4 +124,25 @@ footer {
   font-family: inherit; /* 继承父元素的字体 */
   color: inherit; /* 继承父元素的颜色 */
   margin-right: 10px; /* 与奖项内容保持间距 */
+}
+
+/* 教育经历样式 */
+.education-list {
+  text-align: center; /* 居中对齐 */
+  padding: 0; /* 去除默认的内边距 */
+  margin: 0; /* 去除默认的内外边距 */
+}
+
+.education-list li {
+  margin-bottom: 0.5rem; /* 增加每条记录的间距 */
+}
+
+.education-time {
+  display: inline-block;
+  width: 150px; /* 固定时间宽度，确保对齐 */
+  font-weight: bold; /* 突出显示时间 */
+}
+
+.education-detail {
+  display: inline-block;
 }

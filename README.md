@@ -40,6 +40,7 @@ Feel free to customize the content in `index.html`, `styles.css`, and `script.js
 4. Your website will be available at:
    ```
    https://<your-username>.github.io/<repository-name>
+   https://sunxuehang.github.io/MyWeb/
    ```
 
 ## Features

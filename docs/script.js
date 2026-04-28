@@ -27,21 +27,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalImage = document.getElementById('modal-image');
     const closeModal = document.querySelector('.modal .close');
 
-    document.querySelectorAll('img[data-enlargeable]').forEach(img => {
-        img.addEventListener('click', function() {
-            modal.style.display = 'block';
-            modalImage.src = this.src;
+    if (modal && modalImage && closeModal) {
+        document.querySelectorAll('img[data-enlargeable]').forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.add('is-open');
+                modalImage.src = this.src;
+                modalImage.alt = this.alt;
+            });
         });
-    });
 
-    closeModal.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
+        closeModal.addEventListener('click', function() {
+            modal.classList.remove('is-open');
+        });
 
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('is-open');
+            }
+        });
+    }
 });
-

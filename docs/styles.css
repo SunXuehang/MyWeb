@@ -58,20 +58,6 @@ a {
   text-decoration: none;
 }
 
-.site-stats {
-  margin-left: auto;
-  margin-right: 18px;
-  color: var(--muted);
-  font-size: 0.86rem;
-  font-weight: 650;
-  white-space: nowrap;
-}
-
-.site-stats span {
-  color: var(--accent-dark);
-  font-weight: 800;
-}
-
 .nav-links {
   display: flex;
   gap: 8px;
@@ -89,6 +75,29 @@ a {
 .nav-links a:hover {
   background: #e8f0f8;
   color: var(--accent-dark);
+}
+
+.site-meta {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 30;
+  display: grid;
+  gap: 4px;
+  border: 1px solid rgba(216, 224, 234, 0.86);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.84);
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+  padding: 9px 12px;
+  box-shadow: 0 12px 30px rgba(23, 32, 51, 0.11);
+  backdrop-filter: blur(14px);
+}
+
+.site-meta strong {
+  color: var(--accent-dark);
+  font-weight: 800;
 }
 
 main {
@@ -359,6 +368,16 @@ ul {
   color: var(--gold);
 }
 
+.publication-copy h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publication-copy h3 a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .publication-copy p {
   margin: 4px 0 0;
   color: #415069;
@@ -590,10 +609,6 @@ footer p {
     padding: 14px 20px;
   }
 
-  .site-stats {
-    margin: 0;
-  }
-
   .nav-links {
     width: 100%;
     overflow-x: auto;
@@ -602,6 +617,13 @@ footer p {
 
   main {
     padding: 26px 18px 20px;
+  }
+
+  .site-meta {
+    right: 12px;
+    bottom: 12px;
+    font-size: 0.76rem;
+    padding: 8px 10px;
   }
 
   section {

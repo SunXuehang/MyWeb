@@ -58,6 +58,20 @@ a {
   text-decoration: none;
 }
 
+.site-stats {
+  margin-left: auto;
+  margin-right: 18px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.site-stats span {
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
 .nav-links {
   display: flex;
   gap: 8px;
@@ -574,6 +588,10 @@ footer p {
     flex-direction: column;
     gap: 10px;
     padding: 14px 20px;
+  }
+
+  .site-stats {
+    margin: 0;
   }
 
   .nav-links {

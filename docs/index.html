@@ -13,24 +13,29 @@
       <div class="nav-links">
         <a href="#about">关于</a>
         <a href="#education">教育</a>
+        <a href="#publications">论文</a>
         <a href="#projects">项目</a>
         <a href="#achievements">奖项</a>
+        <a href="#life">生活</a>
       </div>
     </nav>
   </header>
   <main>
     <section id="about" class="hero">
       <div class="about-container">
-        <img src="assets/profile.png" alt="个人照片" class="profile-photo">
+        <img src="assets/personal/Avatar.jpg" alt="孙雪航个人头像" class="profile-photo">
         <div class="hero-content">
           <p class="eyebrow">Ph.D. Student | Wuhan University</p>
           <h1>孙雪航</h1>
-          <p class="intro">我是一名专注于定位导航、惯性导航与工程系统实现的开发者，目前在武汉大学测绘遥感信息工程全国重点实验室攻读博士学位。我的工作覆盖算法设计、软件接收机、仿真可视化与交互系统开发。</p>
+          <p class="intro">我是一名专注于室内定位、惯性导航的开发者，目前在武汉大学测绘遥感信息工程全国重点实验室攻读博士学位。</p>
+          <div class="mentor-info">
+            <span>指导老师：<a href="https://jszy.whu.edu.cn/liyou1/zh_CN/index/1363269/list/index.htm" target="_blank" rel="noopener">李由 教授</a></span>
+            <span>指导博士后：<a href="https://www.researchgate.net/profile/Yan-Wang-211" target="_blank" rel="noopener">王琰 博士后</a></span>
+          </div>
           <div class="contact-info">
             <a href="mailto:xuehangsun@whu.edu.cn">xuehangsun@whu.edu.cn</a>
             <a href="https://github.com/SunXuehang" target="_blank" rel="noopener">GitHub</a>
             <a href="https://www.researchgate.net/profile/Sun-Xuehang?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a>
-            <span>武汉大学 信息学部 星湖楼</span>
           </div>
         </div>
       </div>
@@ -55,6 +60,49 @@
         </li>
       </ul>
     </section>
+    <section id="publications">
+      <div class="section-heading">
+        <span>Publications</span>
+        <h2>发表论文</h2>
+      </div>
+      <ol class="publication-list">
+        <li>
+          <article class="publication-item">
+            <a class="publication-figure" href="https://ieeexplore.ieee.org/document/11251007" target="_blank" rel="noopener">
+              <img src="assets/paper/paper_1.png" alt="MEIO-Net 论文插图">
+            </a>
+            <div class="publication-copy">
+              <span class="publication-year">2025</span>
+              <h3>MEIO-Net: A Motion-Aware Early-Exit Inertial Odometry Network for Efficient Pedestrian Dead Reckoning (PDR)</h3>
+              <p class="publication-citation">Sun X, Li Y, Wang Y, et al. MEIO-Net: A Motion-Aware Early-Exit Inertial Odometry Network for Efficient Pedestrian Dead Reckoning (PDR)[J]. IEEE Internet of Things Journal, 2025.</p>
+              <a class="publication-link" href="https://ieeexplore.ieee.org/document/11251007" target="_blank" rel="noopener">IEEE Xplore</a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="publication-item">
+            <a class="publication-figure" href="https://ieeexplore.ieee.org/document/11468450" target="_blank" rel="noopener">
+              <img src="assets/paper/paper_2.png" alt="实时深度学习 PDR 平台论文插图">
+            </a>
+            <div class="publication-copy">
+              <span class="publication-year">2025</span>
+              <h3>A Smartphone-Based Platform for Real-Time Deep Learning Pedestrian Dead Reckoning</h3>
+              <p class="publication-citation">Sun X, Wang Y, Li Y, et al. A Smartphone-Based Platform for Real-Time Deep Learning Pedestrian Dead Reckoning[C]//2025 International Ubiquitous Positioning, Indoor Navigation and Location-Based Services Conference (UPINLBS). IEEE, 2025: 1-6.</p>
+              <a class="publication-link" href="https://ieeexplore.ieee.org/document/11468450" target="_blank" rel="noopener">IEEE Xplore</a>
+            </div>
+          </article>
+        </li>
+      </ol>
+      <!--
+      <div class="related-publications">
+        <h3>相关论文</h3>
+        <ul>
+          <li>Yan H, Li Y, Huang Z, et al. Hierarchical Constraint Fusion for Robust 3D Rigid Body Localization Using UWB Networks[J]. IEEE Transactions on Mobile Computing, 2026.</li>
+          <li>Yan H, Li Y, Zhang P, et al. A Magnetic Localization Simulation Platform for Freely Moving Gastrointestinal Capsule Robots with an Optical Reference System[C]//2025 International Ubiquitous Positioning, Indoor Navigation and Location-Based Services Conference (UPINLBS). IEEE, 2025: 1-6.</li>
+        </ul>
+      </div>
+      -->
+    </section>
     <section id="projects">
       <div class="section-heading">
         <span>Projects</span>
@@ -62,13 +110,14 @@
       </div>
       <div class="project-container">
         <div class="project-item">
-          <video src="assets/soft_receiver.mp4" class="project-media project-media-large" controls></video>
+          <video src="assets/soft_receiver.mp4" class="project-media project-media-large" controls autoplay loop muted playsinline></video>
           <div class="project-copy">
             <span class="project-time">2023-01-15</span>
             <h3>GNC 一体化软件接收机</h3>
-            <p>负责软件接收机搭建与 OpenGL 加速仿真，完成伪距输出与跨平台可视化界面开发。</p>
+            <p>搭建软件接收机仿真平台，并进行 OpenGL 加速，完成跨平台可视化界面开发。</p>
           </div>
         </div>
+        <!--
         <div class="project-item">
           <img src="assets/water_plane.png" alt="项目 2 图片" class="project-media" data-enlargeable>
           <div class="project-copy">
@@ -86,6 +135,7 @@
             <a class="project-link" href="assets/文旅博览会随州馆策划设计与整合传播框架方案.pdf" target="_blank" rel="noopener">查看方案 PDF</a>
           </div>
         </div>
+        -->
       </div>
     </section>
     <section id="achievements">
@@ -95,8 +145,12 @@
       </div>
       <ul class="award-list">
         <li>
+          <span class="award-time">2025</span>
+          <span><a href="https://gnsscenter.whu.edu.cn/info/1091/10381.htm#:~:text=%E6%AD%A6%E6%B1%89%E5%A4%A7%E5%AD%A6%E5%8D%AB%E6%98%9F%E5%AF%BC%E8%88%AA%E5%AE%9A%E4%BD%8D%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83%EF%BC%88%E6%97%B7%E4%BF%AD%E3%80%81%E7%8E%8B%E7%90%B0%E3%80%81%E9%99%88%E4%B8%96%E4%B8%80%EF%BC%89%E3%80%81%E6%B5%8B%E7%BB%98%E9%81%A5%E6%84%9F%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%85%A8%E5%9B%BD%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4%EF%BC%88%E5%AD%99%E9%9B%AA%E8%88%AA%E3%80%81%E9%83%91%E9%95%87%E5%A5%87%EF%BC%89%E5%B8%88%E7%94%9F%E4%B8%8E%E6%B7%B1%E5%9C%B3%E4%BC%A0%E9%9F%B3%E6%8E%A7%E8%82%A1%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%EF%BC%88%E8%AE%B8%E7%AB%8B%E5%B9%B3%E3%80%81%E6%9B%B9%E9%BB%8E%EF%BC%89%E8%81%94%E5%90%88%E7%BB%84%E9%98%9F%EF%BC%8C%E5%9C%A8%E5%90%8C%E6%9C%9F%E4%B8%BE%E5%8A%9E%E7%9A%84%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%B1%8A%E5%AE%A4%E5%86%85%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%AE%A4%E5%86%85%E5%AF%BC%E8%88%AA%EF%BC%88IPIN%EF%BC%89%E5%9B%BD%E9%99%85%E6%AF%94%E8%B5%9B%E4%B8%AD%E8%8E%B7%E5%BE%97%E4%BA%86Track,6%E8%B5%9B%E9%81%93%E7%9A%84%E5%86%A0%E5%86%9B%EF%BC%8C%E8%BF%99%E4%B9%9F%E6%98%AF%E5%9B%A2%E9%98%9F%E7%AC%AC%E5%85%AB%E6%AC%A1%E8%8E%B7%E5%BE%97IPIN%E7%B3%BB%E5%88%97%E8%B5%9B%E4%BA%8B%E5%86%A0%E5%86%9B%E3%80%82" target="_blank" rel="noopener">IPIN 2025 第十五届室内定位与室内导航国际竞赛 第一名</a></span>
+        </li>
+        <li>
           <span class="award-time">2024</span>
-          <span>IPIN 2024 国际定位与室内导航竞赛成功参赛并获奖</span>
+          <span>测国重 2024 新生羽毛球赛第三名</span>
         </li>
         <li>
           <span class="award-time">2021-2024</span>
@@ -108,9 +162,35 @@
         </li>
         <li>
           <span class="award-time">2019-2020</span>
-          <span>连续两年获得奖学金，并获评年度优秀学生</span>
+          <span>获评优秀学生</span>
         </li>
       </ul>
+    </section>
+    <section id="life">
+      <div class="section-heading">
+        <span>Life</span>
+        <h2>生活照片</h2>
+      </div>
+      <div class="life-gallery">
+        <figure class="life-photo life-photo-wide">
+          <img src="assets/personal/Lifestyle photo_1.jpg" alt="生活照片 1" data-enlargeable>
+        </figure>
+        <figure class="life-photo life-photo-wide">
+          <img src="assets/personal/Lifestyle photo_2.jpg" alt="生活照片 2" data-enlargeable>
+        </figure>
+        <figure class="life-photo">
+          <img src="assets/personal/Lifestyle photo_3.jpg" alt="生活照片 3" data-enlargeable>
+        </figure>
+        <figure class="life-photo">
+          <img src="assets/personal/Lifestyle photo_4.jpg" alt="生活照片 4" data-enlargeable>
+        </figure>
+        <figure class="life-photo">
+          <img src="assets/personal/Lifestyle photo_5.jpg" alt="生活照片 5" data-enlargeable>
+        </figure>
+        <figure class="life-photo">
+          <img src="assets/personal/Lifestyle photo_6.jpg" alt="生活照片 6" data-enlargeable>
+        </figure>
+      </div>
     </section>
   </main>
   <!-- 模态框结构 -->

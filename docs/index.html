@@ -22,7 +22,7 @@
   </header>
   <aside class="site-meta" aria-label="站点信息">
     <span>浏览量 <strong id="busuanzi_value_site_pv">--</strong></span>
-    <span>更新日期 <strong>2026-04-29</strong></span>
+    <span>更新日期 <strong>2026-09-07</strong></span>
   </aside>
   <main>
     <section id="about" class="hero">
@@ -112,6 +112,44 @@
         <h2>项目经历</h2>
       </div>
       <div class="project-container">
+        <div class="project-item">
+          <figure class="project-gallery" data-project-gallery aria-label="Motion Structure 项目演示与实物照片">
+            <video src="assets/motion_structure/metool_video-editor.mp4" class="project-gallery-video" controls autoplay loop muted playsinline preload="metadata" aria-label="手持式扫描装置结构爆炸动画"></video>
+            <div class="project-gallery-photos">
+              <img src="assets/motion_structure/device-front.webp" alt="手持式 MID-360 扫描装置正面实物图" class="project-gallery-image" data-gallery-image data-enlargeable loading="lazy" decoding="async">
+              <img src="assets/motion_structure/device-side.webp" alt="手持式 MID-360 扫描装置侧面实物图" class="project-gallery-image" data-gallery-image data-enlargeable loading="lazy" decoding="async" hidden>
+              <img src="assets/motion_structure/device-rear.webp" alt="手持式 MID-360 扫描装置背面实物图" class="project-gallery-image" data-gallery-image data-enlargeable loading="lazy" decoding="async" hidden>
+              <div class="project-gallery-controls" aria-label="切换实物视图">
+                <button type="button" class="is-active" data-gallery-control aria-label="查看正面视图" aria-pressed="true"></button>
+                <button type="button" data-gallery-control aria-label="查看侧面视图" aria-pressed="false"></button>
+                <button type="button" data-gallery-control aria-label="查看背面视图" aria-pressed="false"></button>
+              </div>
+            </div>
+          </figure>
+          <div class="project-copy">
+            <span class="project-time">2026-09-03</span>
+            <h3>Motion Structure：手持式 MID-360 扫描装置</h3>
+            <p>面向室内三维扫描，自主设计并制作集成 Livox MID-360、RealSense D435i 与 UAV V3 开发板的手持式扫描装置。使用 Python + FreeCAD 参数化生成 6 个 PLA 结构件，实现 0–40° 雷达倾角调节、STEP 一键重建与装配干涉校验。</p>
+            <a class="project-link" href="https://github.com/SunXuehang/Motion-Structure" target="_blank" rel="noopener">查看 GitHub 仓库</a>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-app-media">
+            <div class="project-app-showcase">
+              <video src="assets/neural%20dr%20app/app.mp4" class="project-app-video" controls autoplay loop muted playsinline preload="metadata" aria-label="i2NavPNS 移动端应用演示"></video>
+              <a class="project-app-download" href="https://github.com/SunXuehang/NeuralPDRAPP-download/releases/tag/i2NavPNS" target="_blank" rel="noopener" aria-label="前往 GitHub 下载 i2NavPNS Android 应用">
+                <img src="assets/neural%20dr%20app/扫描二维码下载.png" alt="i2NavPNS Android 应用下载二维码" loading="lazy" decoding="async">
+                <span>扫码下载 APK</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-copy">
+            <span class="project-time">2024-09-01</span>
+            <h3>Neural DR：i2NavPNS 移动端应用</h3>
+            <p>开发面向深度学习行人航位推算的 Android 应用，将手机惯性传感器数据与模型推理结果实时可视化，同步展示定位坐标、地图轨迹及三维运动轨迹。</p>
+            <a class="project-link" href="https://github.com/SunXuehang/NeuralPDRAPP-download/releases/tag/i2NavPNS" target="_blank" rel="noopener">下载 Android 应用</a>
+          </div>
+        </div>
         <div class="project-item">
           <video src="assets/soft_receiver.mp4" class="project-media project-media-large" controls autoplay loop muted playsinline></video>
           <div class="project-copy">

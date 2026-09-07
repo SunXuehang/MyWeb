@@ -22,6 +22,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // 项目实物图切换
+    document.querySelectorAll('[data-project-gallery]').forEach(gallery => {
+        const images = gallery.querySelectorAll('[data-gallery-image]');
+        const controls = gallery.querySelectorAll('[data-gallery-control]');
+
+        controls.forEach((control, activeIndex) => {
+            control.addEventListener('click', function() {
+                images.forEach((image, imageIndex) => {
+                    image.hidden = imageIndex !== activeIndex;
+                });
+
+                controls.forEach((item, itemIndex) => {
+                    const isActive = itemIndex === activeIndex;
+                    item.classList.toggle('is-active', isActive);
+                    item.setAttribute('aria-pressed', String(isActive));
+                });
+            });
+        });
+    });
+
     // 图片放大功能
     const modal = document.getElementById('image-modal');
     const modalImage = document.getElementById('modal-image');
